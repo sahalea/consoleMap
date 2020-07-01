@@ -4,7 +4,6 @@
 export const data = [
   {
     name: "Mercedes truck  UK07 0112",
-    number: "LK07 0112",
     indicate: "#E0766E",
     points: [{ latitude: 25.2146, longitude: 55.3033 }],
   },
