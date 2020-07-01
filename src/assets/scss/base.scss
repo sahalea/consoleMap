@@ -1,0 +1,76 @@
+a:focus {
+  outline: none;
+}
+
+input {
+  -webkit-appearance: none;
+  box-shadow: none !important;
+  &:focus {
+    outline: none;
+  }
+}
+
+ul,
+ol {
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none !important;
+  transition: all 0.4s ease;
+}
+
+.btn,
+button {
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+html,
+body {
+  min-height: 100vh;
+  position: relative;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: $primaryColor !important;
+  font-family: $font-main;
+  @include font-family(14px, $titleColor, 400, 1);
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  overflow: hidden !important;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  padding: 0px;
+  margin: 0px;
+  &.title {
+    @include font-family(0.6em, $titleColor, 400, 1);
+    text-transform: uppercase;
+  }
+}
+
+p {
+  @include font-family(1em, $titleColor, 400, 1.8rem);
+  margin: 0;
+  padding: 0;
+}

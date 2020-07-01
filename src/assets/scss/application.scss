@@ -1,0 +1,58 @@
+.app-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  .sidebar {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    min-width: 0px;
+    padding: 5px;
+    @include boxshdow;
+    transition: all 0.4s;
+    &.false {
+      max-width: 0px;
+      padding: 0px !important;
+      .searchbar {
+        display: none;
+      }
+      ul {
+        display: none;
+      }
+    }
+    ul {
+      list-style: none;
+      li {
+        padding: 1.3rem;
+        border-bottom: solid 1px $borderColor;
+        &:hover {
+          cursor: pointer;
+          background: $hoverColor;
+        }
+        &.active {
+          background: $hoverColor;
+        }
+        .carlist {
+          display: flex;
+          align-items: center;
+          @include font-family(14px, $titleColor, 400, 1);
+          .indicate {
+            display: block;
+            content: "";
+            width: 7px;
+            height: 7px;
+            border-radius: 15px;
+            background: red;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+    .toggle {
+      position: absolute;
+      top: 0;
+      left: 100%;
+      z-index: 999;
+    }
+  }
+}
