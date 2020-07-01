@@ -7,6 +7,7 @@ import { mapConfig } from "../util/dataManagement";
 const MapView = (props) => {
   /**
    * display for marker
+   * @returns marker
    */
   const displayMarkers = () => {
     return props.points.map((store, index) => {
